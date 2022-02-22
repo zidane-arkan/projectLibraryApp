@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <section class="book-submit-box">
+            <div class="img-box">
+                <img src="./assets/Landing_coba.png" alt="People read book">
+            </div>
+            <div class="form-box">
+                <span id="tambah-h">
+                    <h1>Tambah Buku</h1>
+                </span>
+                <form id="inputBookBox">
+                    <div class="input">
+                        <input class="input-book" id="inputBookTitle" type="text" placeholder="Masukkan judul Buku"
+                            required>
+                    </div>
+                    <div class="input">
+                        <input class="input-book" id="inputBookAuthor" type="text" placeholder="Masukkan nama penulis"
+                            required>
+                    </div>
+                    <div class="input">
+                        <input class="input-book" id="inputBookYear" type="number" placeholder="Masukkan tahun Buku"
+                            required>
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete">Selesai dibaca</label>
+                        <input id="inputBookIsComplete" type="checkbox">
+                    </div>
+                    <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span id="textUbahSubmit"> Belum selesai
+                            dibaca</span></button>
+                </form>
+            </div>
+        </section>
+        <section class="rak-buku">
+            <div id="belumSelesaiDibaca" class="baca-box">
+                <span id="selesai-h">
+                    <h2>Belum Selesai Dibaca</h2>
+                </span>
+            </div>
+        </section>
+        <section class="rak-buku">
+            <div id="selesaiDibaca" class="baca-box">
+                <span id="selesai-h">
+                    <h2>Selesai Dibaca</h2>
+                </span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <script type="text/javascript" src="./js/script.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+    </footer>
+</body>
+
+</html>
